@@ -39,9 +39,8 @@ export function VendorCard({ vendor, categoryId, regionId }: VendorCardProps) {
         <div className="flex justify-between items-start">
           <CardTitle className="text-xl">{vendor.title}</CardTitle>
           {vendor.rating && (
-            <Rating 
-              value={vendor.rating.value} 
-              votesCount={vendor.rating.votesCount} 
+            <Rating
+              value={vendor.rating}
             />
           )}
         </div>

@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Phone, Globe, MapPin, Clock, Mail } from 'lucide-react'
 import { italianRegions } from '@/lib/regions'
 import { venueTypes } from '@/lib/venues'
-import { getVendorDetails } from '@/lib/api'
+import { getVendorDetails, searchVendors } from '@/lib/api'
 
 interface VenuePageProps {
   params: {
@@ -32,6 +32,23 @@ export async function generateMetadata({ params }: VenuePageProps) {
     description: `${venue.description || `Book ${venue.title} for your wedding in ${region.name}, Italy. A stunning ${venueType.title.toLowerCase()} venue offering the perfect setting for your special day.`}`,
     keywords: `${venue.title}, ${venueType.title.toLowerCase()} ${region.name}, Italian wedding venue, ${venueType.searchTerm}, wedding venue ${region.name}`,
   }
+}
+
+export async function generateStaticParams() {
+  const paths = []
+  for (const region of italianRegions) {
+    for (const [typeId, venueType] of Object.entries(venueTypes)) {
+      const venues = await searchVendors(venueType.searchTerm, region.name)
+      for (const venue of venues) {
+        paths.push({
+          region: region.id,
+          type: typeId,
+          venueId: venue.id,
+        })
+      }
+    }
+  }
+  return paths
 }
 
 export default async function VenuePage({ params }: VenuePageProps) {

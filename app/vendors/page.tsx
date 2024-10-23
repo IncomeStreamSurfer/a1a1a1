@@ -2,20 +2,24 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { vendorCategories } from '@/lib/vendors'
-import { MapPin, Camera, Flower2, UtensilsCrossed, Calendar } from 'lucide-react'
+import { MapPin, Camera, Flower2, UtensilsCrossed, Calendar, LucideIcon } from 'lucide-react'
 
-export const metadata = {
-  title: 'Italian Wedding Vendors - Find Perfect Wedding Services in Italy',
-  description: 'Discover top wedding vendors across Italy. From photographers to caterers, find all the services you need for your Italian wedding.',
-  keywords: 'Italian wedding vendors, wedding services Italy, Italian wedding photographers, Italian wedding planners, Italian wedding catering',
-}
+// Define a type for the category IDs
+type CategoryId = 'venues' | 'photographers' | 'florists' | 'caterers' | 'planners';
 
-const categoryIcons = {
+// Update the categoryIcons object with the correct type
+const categoryIcons: Record<CategoryId, LucideIcon> = {
   venues: MapPin,
   photographers: Camera,
   florists: Flower2,
   caterers: UtensilsCrossed,
   planners: Calendar,
+};
+
+export const metadata = {
+  title: 'Italian Wedding Vendors - Find Perfect Wedding Services in Italy',
+  description: 'Discover top wedding vendors across Italy. From photographers to caterers, find all the services you need for your Italian wedding.',
+  keywords: 'Italian wedding vendors, wedding services Italy, Italian wedding photographers, Italian wedding planners, Italian wedding catering',
 }
 
 export default function VendorsPage() {
@@ -48,7 +52,8 @@ export default function VendorsPage() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {vendorCategories.map((category) => {
-              const Icon = categoryIcons[category.id] || MapPin
+              // Use type assertion to ensure category.id is of type CategoryId
+              const Icon = categoryIcons[category.id as CategoryId] || MapPin;
               return (
                 <Link key={category.id} href={`/vendors/${category.id}`}>
                   <Card className="h-full hover:shadow-lg transition-shadow">

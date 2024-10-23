@@ -16,37 +16,13 @@ interface VendorPageProps {
   }
 }
 
-import { GetStaticPaths, GetStaticProps } from 'next'
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  const popularPages = await getPopularVendorPages(); // Implement this function
-  const paths = popularPages.map(({ region, category }) => ({
-    params: { region, category },
-  }));
-  return {
-    paths,
-    fallback: 'blocking',
-  };
-};
-
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const region = italianRegions.find((r) => r.id === params?.region)
-  const category = vendorCategories.find((c) => c.id === params?.category)
-  
-  if (!region || !category) {
-    return { notFound: true }
-  }
-
-  const vendors = await searchVendors(category.searchTerm, region.name)
-
-  return {
-    props: {
-      region,
-      category,
-      vendors,
-    },
-    revalidate: 86400, // Revalidate every 24 hours
-  }
+export async function generateStaticParams() {
+  return italianRegions.flatMap((region) =>
+    vendorCategories.map((category) => ({
+      region: region.id,
+      category: category.id,
+    }))
+  )
 }
 
 export async function generateMetadata({ params }: VendorPageProps) {

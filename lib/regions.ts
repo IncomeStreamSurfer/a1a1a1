@@ -3,7 +3,7 @@ export const italianRegions = [
     id: 'tuscany',
     name: 'Tuscany',
     description: 'Rolling hills, vineyards, and Renaissance art make Tuscany a romantic wedding destination.',
-    image: 'https://unsplash.com/photos/a-scenic-view-of-a-town-surrounded-by-trees-VcQlpFRWx8w',
+    image: 'https://images.unsplash.com/photo-1702742910818-542f2a2042bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#8B4513',
       secondary: '#DAA520'
@@ -15,7 +15,7 @@ export const italianRegions = [
     id: 'amalfi-coast',
     name: 'Amalfi Coast',
     description: 'Dramatic cliffs, azure waters, and lemon groves create a stunning coastal wedding backdrop.',
-    image: 'https://unsplash.com/photos/a-scenic-view-of-the-ocean-from-a-hillside-9C7Wy-6eaLY',
+    image: 'https://images.unsplash.com/photo-1710443165311-d0466a879c50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#0077BE',
       secondary: '#FFD700'
@@ -27,7 +27,7 @@ export const italianRegions = [
     id: 'florence',
     name: 'Florence',
     description: 'The birthplace of Renaissance, offering artistic and cultural wedding venues.',
-    image: 'https://unsplash.com/photos/florence-cathedral-with-many-windows-cSM1eTLjR4U',
+    image: 'https://images.unsplash.com/photo-1668265216526-f33d5cafdbfe?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#7B3F00',
       secondary: '#D4AF37'
@@ -39,7 +39,7 @@ export const italianRegions = [
     id: 'naples',
     name: 'Naples',
     description: 'Vibrant city with historic palaces and stunning Bay of Naples views.',
-    image: 'https://unsplash.com/photos/a-view-of-a-city-with-a-body-of-water-in-the-background-usBxbL_xezc',
+    image: 'https://images.unsplash.com/photo-1689982924720-8c7474b1e8db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#1E4D8C',
       secondary: '#FFB81C'
@@ -51,7 +51,7 @@ export const italianRegions = [
     id: 'lake-como',
     name: 'Lake Como',
     description: 'Elegant lakeside villas and mountain views for a luxurious wedding.',
-    image: 'https://unsplash.com/photos/a-large-body-of-water-surrounded-by-mountains-iX4W7X2pbHw',
+    image: 'https://images.unsplash.com/photo-1698405967427-5b59a647934d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#2E5894',
       secondary: '#C0B283'
@@ -63,7 +63,7 @@ export const italianRegions = [
     id: 'venice',
     name: 'Venice',
     description: 'Romantic canals and historic palazzos for a unique wedding experience.',
-    image: 'https://unsplash.com/photos/a-large-body-of-water-with-a-city-in-the-background-7KeAJ-7Q2xg',
+    image: 'https://images.unsplash.com/photo-1523906921802-b5d2d899e93b?q=80&w=1906&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#1B4D89',
       secondary: '#C1A87D'
@@ -75,7 +75,7 @@ export const italianRegions = [
     id: 'rome',
     name: 'Rome',
     description: 'Eternal City offering ancient ruins and baroque palaces for weddings.',
-    image: 'https://unsplash.com/photos/a-view-of-the-city-of-rome-italy-8kiXBf7xefg',
+    image: 'https://images.unsplash.com/photo-1688163217379-c331b5faa70c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#872D2D',
       secondary: '#E5B80B'
@@ -87,7 +87,7 @@ export const italianRegions = [
     id: 'sicily',
     name: 'Sicily',
     description: 'Mediterranean island with Greek temples and coastal venues.',
-    image: 'https://unsplash.com/photos/a-body-of-water-with-rocks-and-buildings-in-the-background-znVLWdH5gZU',
+    image: 'https://images.unsplash.com/photo-1688105304251-8224651fb3b9?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#004225',
       secondary: '#FFB30F'
@@ -99,7 +99,7 @@ export const italianRegions = [
     id: 'milan',
     name: 'Milan',
     description: 'Fashion capital with sophisticated urban wedding venues.',
-    image: 'https://unsplash.com/photos/a-view-of-a-city-with-a-crane-in-the-background-8UBd7Q4-zwM',
+    image: 'https://images.unsplash.com/photo-1518797814703-ed31ee241ef8?q=80&w=1713&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#1A1A1A',
       secondary: '#C0C0C0'
@@ -111,7 +111,7 @@ export const italianRegions = [
     id: 'puglia',
     name: 'Puglia',
     description: 'Rustic charm with traditional trulli houses and olive groves.',
-    image: 'https://unsplash.com/photos/7MMg-H8G3XE',
+    image: 'https://images.unsplash.com/photo-1690296803528-84ef1c9bb349?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#4A6741',
       secondary: '#E6D690'
@@ -123,7 +123,7 @@ export const italianRegions = [
     id: 'portofino',
     name: 'Portofino',
     description: 'Exclusive harbor town with colorful houses and luxury yachts.',
-    image: 'https://unsplash.com/photos/a-group-of-boats-floating-on-top-of-a-body-of-water-sVUb8CwPmnI',
+    image: 'https://images.unsplash.com/photo-1720247523030-3723ee3ccb45?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#FF6B6B',
       secondary: '#4ECDC4'
@@ -135,7 +135,7 @@ export const italianRegions = [
     id: 'capri',
     name: 'Capri',
     description: 'Glamorous island paradise with dramatic sea views.',
-    image: 'https://unsplash.com/photos/a-view-of-a-body-of-water-from-a-hill-IdDsUfAMNAQ',
+    image: 'https://images.unsplash.com/photo-1723222954617-e6644d5c9a50?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#0073CF',
       secondary: '#FFD700'
@@ -147,7 +147,7 @@ export const italianRegions = [
     id: 'positano',
     name: 'Positano',
     description: 'Vertical town with pastel houses cascading to the sea.',
-    image: 'https://unsplash.com/photos/a-view-of-a-city-from-a-window-WWPJOPMp83o',
+    image: 'https://images.unsplash.com/photo-1441120526655-678eca71862a?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#FF9A8B',
       secondary: '#4A90E2'
@@ -159,7 +159,7 @@ export const italianRegions = [
     id: 'san-gimignano',
     name: 'San Gimignano',
     description: 'Medieval town known for its towers and Tuscan charm.',
-    image: 'https://unsplash.com/photos/a-city-with-a-lot-of-tall-buildings-on-top-of-it--lQ7mp4E9os',
+    image: 'https://images.unsplash.com/photo-1698061145896-be0ff446aaa2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#8B4513',
       secondary: '#DAA520'
@@ -171,7 +171,7 @@ export const italianRegions = [
     id: 'ravello',
     name: 'Ravello',
     description: 'Sophisticated hill town with stunning Amalfi Coast views.',
-    image: 'https://unsplash.com/photos/a-scenic-view-of-a-town-and-the-ocean-MhrKJq5b7AM',
+    image: 'https://images.unsplash.com/photo-1625463901254-41bbc18853d1?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#4A90E2',
       secondary: '#FFB6C1'
@@ -183,7 +183,7 @@ export const italianRegions = [
     id: 'taormina',
     name: 'Taormina',
     description: 'Ancient Greek theater town with Mount Etna views.',
-    image: 'https://unsplash.com/photos/a-view-of-a-city-from-a-balcony-LDRvKScT40Q',
+    image: 'https://images.unsplash.com/photo-1696425236280-dd3faeab1a10?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#8B0000',
       secondary: '#FFA07A'
@@ -195,7 +195,7 @@ export const italianRegions = [
     id: 'bellagio',
     name: 'Bellagio',
     description: 'Pearl of Lake Como with elegant villas and gardens.',
-    image: 'https://images.unsplash.com/photo-1583778176476-4a8b02a64c01',
+    image: 'https://images.unsplash.com/photo-1583855282680-6dbdc69b0932?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#2E8B57',
       secondary: '#DAA520'
@@ -207,7 +207,7 @@ export const italianRegions = [
     id: 'siena',
     name: 'Siena',
     description: 'Medieval city with stunning Piazza del Campo.',
-    image: 'https://images.unsplash.com/photo-1572204443372-c3d0b5f06c57',
+    image: 'https://images.unsplash.com/photo-1722783589327-c5ccb94db734?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#8B4513',
       secondary: '#CD853F'
@@ -219,7 +219,7 @@ export const italianRegions = [
     id: 'sorrento',
     name: 'Sorrento',
     description: 'Coastal town famous for lemons and sea views.',
-    image: 'https://images.unsplash.com/photo-1564594326930-17321e4f5e0e',
+    image: 'https://images.unsplash.com/photo-1724003751228-8e417489374e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#FFA07A',
       secondary: '#20B2AA'
@@ -231,7 +231,7 @@ export const italianRegions = [
     id: 'orvieto',
     name: 'Orvieto',
     description: 'Dramatic hilltop town with famous Duomo.',
-    image: 'https://images.unsplash.com/photo-1529260830199-42c24126f198',
+    image: 'https://images.unsplash.com/photo-1711203584409-5696f30b5833?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     colors: {
       primary: '#704214',
       secondary: '#B8860B'

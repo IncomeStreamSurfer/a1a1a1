@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   eslint: {
     ignoreDuringBuilds: true,
   },
-  images: {
-    domains: ['images.unsplash.com'], // Add other image domains if needed
-  },
+  images: { unoptimized: true },
   staticPageGenerationTimeout: 900, // 15 minutes in seconds
 };
 

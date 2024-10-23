@@ -11,10 +11,37 @@ interface VenueTypePageProps {
   }
 }
 
-export async function generateStaticParams() {
-  return Object.keys(venueTypes).map((type) => ({
-    type: type,
-  }))
+import { GetStaticPaths, GetStaticProps } from 'next'
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const popularPages = await getPopularVenuePages(); // Implement this function
+  const paths = popularPages.map(({ region, type }) => ({
+    params: { region, type },
+  }));
+  return {
+    paths,
+    fallback: 'blocking',
+  };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const region = italianRegions.find((r) => r.id === params?.region)
+  const venueType = venueTypes[params?.type as keyof typeof venueTypes]
+  
+  if (!region || !venueType) {
+    return { notFound: true }
+  }
+
+  const venues = await searchVendors(venueType.searchTerm, region.name)
+
+  return {
+    props: {
+      region,
+      venueType,
+      venues,
+    },
+    revalidate: 86400, // Revalidate every 24 hours
+  }
 }
 
 export async function generateMetadata({ params }: VenueTypePageProps) {

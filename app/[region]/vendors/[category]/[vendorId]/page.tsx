@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Phone, Globe, MapPin, Clock, Mail } from 'lucide-react'
 import { italianRegions } from '@/lib/regions'
 import { vendorCategories } from '@/lib/vendors'
-import { getVendorDetails } from '@/lib/api'
+import { getVendorDetails, searchVendors } from '@/lib/api'
 
 interface VendorPageProps {
   params: {
@@ -13,6 +13,23 @@ interface VendorPageProps {
     category: string
     vendorId: string
   }
+}
+
+export async function generateStaticParams() {
+  const paths = []
+  for (const region of italianRegions) {
+    for (const category of vendorCategories) {
+      const vendors = await searchVendors(category.searchTerm, region.name)
+      for (const vendor of vendors) {
+        paths.push({
+          region: region.id,
+          category: category.id,
+          vendorId: vendor.id,
+        })
+      }
+    }
+  }
+  return paths
 }
 
 export async function generateMetadata({ params }: VendorPageProps) {
