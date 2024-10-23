@@ -6,6 +6,8 @@ import { italianRegions } from '@/lib/regions'
 import { vendorCategories } from '@/lib/vendors'
 import { searchVendors, type SearchResult } from '@/lib/api'
 import { Star, Phone, Globe, MapPin } from 'lucide-react'
+import { VendorCard } from '@/components/vendors/VendorCard'
+import { VendorFilters } from '@/components/vendors/VendorFilters'
 
 interface VendorPageProps {
   params: {
@@ -14,23 +16,13 @@ interface VendorPageProps {
   }
 }
 
-import { getAllRegions, getAllVendorCategories } from '@/lib/api';
-
 export async function generateStaticParams() {
-  const regions = await getAllRegions();
-  const categories = await getAllVendorCategories();
-  const paths = [];
-
-  for (const region of regions) {
-    for (const category of categories) {
-      paths.push({
-        region: region.id,
-        category: category.id,
-      });
-    }
-  }
-
-  return paths;
+  return italianRegions.flatMap((region) =>
+    vendorCategories.map((category) => ({
+      region: region.id,
+      category: category.id,
+    }))
+  )
 }
 
 export async function generateMetadata({ params }: VendorPageProps) {
