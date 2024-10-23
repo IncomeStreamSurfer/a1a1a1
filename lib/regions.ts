@@ -3,7 +3,7 @@ export const italianRegions = [
     id: 'tuscany',
     name: 'Tuscany',
     description: 'Rolling hills, vineyards, and Renaissance art make Tuscany a romantic wedding destination.',
-    image: 'https://images.unsplash.com/photo-1523531294919-4bcd7c65e216',
+    image: 'https://unsplash.com/photos/a-scenic-view-of-a-town-surrounded-by-trees-VcQlpFRWx8w',
     colors: {
       primary: '#8B4513',
       secondary: '#DAA520'
@@ -15,7 +15,7 @@ export const italianRegions = [
     id: 'amalfi-coast',
     name: 'Amalfi Coast',
     description: 'Dramatic cliffs, azure waters, and lemon groves create a stunning coastal wedding backdrop.',
-    image: 'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca',
+    image: 'https://unsplash.com/photos/a-scenic-view-of-the-ocean-from-a-hillside-9C7Wy-6eaLY',
     colors: {
       primary: '#0077BE',
       secondary: '#FFD700'
@@ -27,7 +27,7 @@ export const italianRegions = [
     id: 'florence',
     name: 'Florence',
     description: 'The birthplace of Renaissance, offering artistic and cultural wedding venues.',
-    image: 'https://images.unsplash.com/photo-1476362174823-3a23f4aa6d76',
+    image: 'https://unsplash.com/photos/florence-cathedral-with-many-windows-cSM1eTLjR4U',
     colors: {
       primary: '#7B3F00',
       secondary: '#D4AF37'
@@ -39,7 +39,7 @@ export const italianRegions = [
     id: 'naples',
     name: 'Naples',
     description: 'Vibrant city with historic palaces and stunning Bay of Naples views.',
-    image: 'https://images.unsplash.com/photo-1710625361134-332bc2801df3',
+    image: 'https://unsplash.com/photos/a-view-of-a-city-with-a-body-of-water-in-the-background-usBxbL_xezc',
     colors: {
       primary: '#1E4D8C',
       secondary: '#FFB81C'
@@ -51,7 +51,7 @@ export const italianRegions = [
     id: 'lake-como',
     name: 'Lake Como',
     description: 'Elegant lakeside villas and mountain views for a luxurious wedding.',
-    image: 'https://images.unsplash.com/photo-1710954695593-32563ce4767a',
+    image: 'https://unsplash.com/photos/a-large-body-of-water-surrounded-by-mountains-iX4W7X2pbHw',
     colors: {
       primary: '#2E5894',
       secondary: '#C0B283'
@@ -63,7 +63,7 @@ export const italianRegions = [
     id: 'venice',
     name: 'Venice',
     description: 'Romantic canals and historic palazzos for a unique wedding experience.',
-    image: 'https://images.unsplash.com/photo-1514890547357-a9ee288728e0',
+    image: 'https://unsplash.com/photos/a-large-body-of-water-with-a-city-in-the-background-7KeAJ-7Q2xg',
     colors: {
       primary: '#1B4D89',
       secondary: '#C1A87D'
@@ -75,7 +75,7 @@ export const italianRegions = [
     id: 'rome',
     name: 'Rome',
     description: 'Eternal City offering ancient ruins and baroque palaces for weddings.',
-    image: 'https://images.unsplash.com/photo-1525874684015-58379d421a52',
+    image: 'https://unsplash.com/photos/a-view-of-the-city-of-rome-italy-8kiXBf7xefg',
     colors: {
       primary: '#872D2D',
       secondary: '#E5B80B'
@@ -87,7 +87,7 @@ export const italianRegions = [
     id: 'sicily',
     name: 'Sicily',
     description: 'Mediterranean island with Greek temples and coastal venues.',
-    image: 'https://images.unsplash.com/photo-1523365154888-8a758819b722',
+    image: 'https://unsplash.com/photos/a-body-of-water-with-rocks-and-buildings-in-the-background-znVLWdH5gZU',
     colors: {
       primary: '#004225',
       secondary: '#FFB30F'
@@ -99,7 +99,7 @@ export const italianRegions = [
     id: 'milan',
     name: 'Milan',
     description: 'Fashion capital with sophisticated urban wedding venues.',
-    image: 'https://images.unsplash.com/photo-1512758017271-d7b84c2113f1',
+    image: 'https://unsplash.com/photos/a-view-of-a-city-with-a-crane-in-the-background-8UBd7Q4-zwM',
     colors: {
       primary: '#1A1A1A',
       secondary: '#C0C0C0'
@@ -111,7 +111,7 @@ export const italianRegions = [
     id: 'puglia',
     name: 'Puglia',
     description: 'Rustic charm with traditional trulli houses and olive groves.',
-    image: 'https://images.unsplash.com/photo-1523531294919-4bcd7c65e216',
+    image: 'https://unsplash.com/photos/7MMg-H8G3XE',
     colors: {
       primary: '#4A6741',
       secondary: '#E6D690'
@@ -123,7 +123,7 @@ export const italianRegions = [
     id: 'portofino',
     name: 'Portofino',
     description: 'Exclusive harbor town with colorful houses and luxury yachts.',
-    image: 'https://images.unsplash.com/photo-1499678329028-101435549a4e',
+    image: 'https://unsplash.com/photos/a-group-of-boats-floating-on-top-of-a-body-of-water-sVUb8CwPmnI',
     colors: {
       primary: '#FF6B6B',
       secondary: '#4ECDC4'
@@ -135,7 +135,7 @@ export const italianRegions = [
     id: 'capri',
     name: 'Capri',
     description: 'Glamorous island paradise with dramatic sea views.',
-    image: 'https://images.unsplash.com/photo-1559732277-7ac9f2b7c206',
+    image: 'https://unsplash.com/photos/a-view-of-a-body-of-water-from-a-hill-IdDsUfAMNAQ',
     colors: {
       primary: '#0073CF',
       secondary: '#FFD700'
@@ -147,7 +147,7 @@ export const italianRegions = [
     id: 'positano',
     name: 'Positano',
     description: 'Vertical town with pastel houses cascading to the sea.',
-    image: 'https://images.unsplash.com/photo-1555921015-5532091f6026',
+    image: 'https://unsplash.com/photos/a-view-of-a-city-from-a-window-WWPJOPMp83o',
     colors: {
       primary: '#FF9A8B',
       secondary: '#4A90E2'
@@ -159,7 +159,7 @@ export const italianRegions = [
     id: 'san-gimignano',
     name: 'San Gimignano',
     description: 'Medieval town known for its towers and Tuscan charm.',
-    image: 'https://images.unsplash.com/photo-1534260754363-c1e4e2a2c1e7',
+    image: 'https://unsplash.com/photos/a-city-with-a-lot-of-tall-buildings-on-top-of-it--lQ7mp4E9os',
     colors: {
       primary: '#8B4513',
       secondary: '#DAA520'
@@ -171,7 +171,7 @@ export const italianRegions = [
     id: 'ravello',
     name: 'Ravello',
     description: 'Sophisticated hill town with stunning Amalfi Coast views.',
-    image: 'https://images.unsplash.com/photo-1590059390947-85d2ca359b9a',
+    image: 'https://unsplash.com/photos/a-scenic-view-of-a-town-and-the-ocean-MhrKJq5b7AM',
     colors: {
       primary: '#4A90E2',
       secondary: '#FFB6C1'
@@ -183,7 +183,7 @@ export const italianRegions = [
     id: 'taormina',
     name: 'Taormina',
     description: 'Ancient Greek theater town with Mount Etna views.',
-    image: 'https://images.unsplash.com/photo-1586024486164-ce9b3d87e09f',
+    image: 'https://unsplash.com/photos/a-view-of-a-city-from-a-balcony-LDRvKScT40Q',
     colors: {
       primary: '#8B0000',
       secondary: '#FFA07A'
