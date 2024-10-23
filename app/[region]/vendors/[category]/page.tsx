@@ -14,17 +14,23 @@ interface VendorPageProps {
   }
 }
 
+import { getAllRegions, getAllVendorCategories } from '@/lib/api';
+
 export async function generateStaticParams() {
-  const paths = []
-  for (const region of italianRegions) {
-    for (const category of vendorCategories) {
+  const regions = await getAllRegions();
+  const categories = await getAllVendorCategories();
+  const paths = [];
+
+  for (const region of regions) {
+    for (const category of categories) {
       paths.push({
         region: region.id,
         category: category.id,
-      })
+      });
     }
   }
-  return paths
+
+  return paths;
 }
 
 export async function generateMetadata({ params }: VendorPageProps) {
@@ -97,11 +103,11 @@ export default async function VendorPage({ params }: VendorPageProps) {
                 )}
                 <CardHeader>
                   <CardTitle>{vendor.title}</CardTitle>
-                  {vendor.rating && (
+                  {vendor.rating !== undefined && (
                     <div className="flex items-center space-x-1">
                       <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                       <span>{vendor.rating}</span>
-                      {vendor.reviews && (
+                      {vendor.reviews !== undefined && (
                         <span className="text-muted-foreground">
                           ({vendor.reviews} reviews)
                         </span>
