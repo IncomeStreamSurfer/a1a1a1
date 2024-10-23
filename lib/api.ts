@@ -27,6 +27,9 @@ export interface SearchResult {
   longitude?: number
   isClaimed?: boolean
   currentStatus?: string
+  rating: number
+  reviews?: number
+  rating_votes_count?: number
 }
 
 export interface SearchFilters {
@@ -96,7 +99,7 @@ export async function searchVendors(
 
     // Apply filters
     if (filters) {
-      return results.filter((result) => {
+      return results.filter((result: SearchResult) => {
         if (filters.priceRange && result.priceLevel !== filters.priceRange) return false
         if (filters.features?.length && !filters.features.every(f => result.features?.includes(f))) return false
         return true
@@ -144,7 +147,10 @@ export async function getVendorDetails(placeId: string): Promise<SearchResult | 
       latitude: item.latitude,
       longitude: item.longitude,
       isClaimed: item.is_claimed,
-      currentStatus: item.work_hours?.current_status
+      currentStatus: item.work_hours?.current_status,
+      rating: item.rating || 0,
+      reviews: item.reviews_count,
+      rating_votes_count: item.rating_votes_count
     }
   } catch (error) {
     console.error('Error fetching vendor details:', error)
